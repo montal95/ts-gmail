@@ -2,12 +2,13 @@ import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import { Header, Sidebar, Mail, EmailList } from './components'
+import { AppBody } from './components/elements'
 
 const App: React.FC = () => (
   <BrowserRouter>
     <div className="app">
       <Header />
-      <div className="app-body">
+      <AppBody>
         <Sidebar />
         <Switch>
           <Route exact path="/">
@@ -17,7 +18,7 @@ const App: React.FC = () => (
             <Mail />
           </Route>
         </Switch>
-      </div>
+      </AppBody>
     </div>
   </BrowserRouter>
 )
