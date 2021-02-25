@@ -19,20 +19,13 @@ export const SidebarOption = styled.div`
   border-bottom-right-radius: 20px;
   cursor: pointer;
   color: #81818181;
-  &:hover,
-  p:hover,
-  h3:hover {
-    background-color: #fcecec;
-    color: #c04b37;
-    font-weight: 800;
-  }
   .MuiSvgIcon-root {
     margin-left: 5px;
   }
   h3 {
     flex: 1;
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     margin-bottom: 26px;
   }
@@ -40,7 +33,18 @@ export const SidebarOption = styled.div`
     display: none;
     font-weight: 300;
   }
-  &:hover p {
+  &:hover > p,
+  &.option--active > p {
     display: inline;
+  }
+  &:hover,
+  &:hover > p,
+  &:hover > h3,
+  &.option--active,
+  &.option--active > p,
+  &.option--active > h3 {
+    background-color: #fcecec !important;
+    color: #c04b37;
+    font-weight: 800;
   }
 `

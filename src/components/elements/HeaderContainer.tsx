@@ -10,6 +10,7 @@ export const HeaderContainer = styled.header`
     align-items: center;
     padding-left: 20px;
     img {
+      margin-left: 10px;
       object-fit: container;
     }
   }
