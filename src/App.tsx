@@ -1,13 +1,23 @@
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import { Header, Sidebar } from './components'
+import { Header, Sidebar, Mail, EmailList } from './components'
 
 const App: React.FC = () => (
   <BrowserRouter>
-    <div>
+    <div className="app">
       <Header />
-      <Sidebar />
+      <div className="app-body">
+        <Sidebar />
+        <Switch>
+          <Route exact path="/">
+            <EmailList />
+          </Route>
+          <Route path="/mail">
+            <Mail />
+          </Route>
+        </Switch>
+      </div>
     </div>
   </BrowserRouter>
 )

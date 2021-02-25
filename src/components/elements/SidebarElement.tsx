@@ -48,3 +48,7 @@ export const SidebarOption = styled.div`
     font-weight: 800;
   }
 `
+export const SidebarFooter = styled.div`
+  display: flex;
+  justify-content: center;
+`

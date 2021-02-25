@@ -1,3 +1,5 @@
 export * from './Header'
 export * from './Sidebar'
 export * from './PanelOption'
+export * from './Mail'
+export * from './EmailList'
