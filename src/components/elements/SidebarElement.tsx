@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
 export const SidebarPanel = styled.div`
+  padding-right: 5px;
+  flex: 0.3;
+  max-width: 300px;
   #compose {
     margin: 15px 0 10px 15px;
     text-transform: capitalize;
@@ -39,7 +42,11 @@ export const SidebarOption = styled.div`
   }
   &:hover,
   &:hover > p,
-  &:hover > h3,
+  &:hover > h3 {
+    background-color: whitesmoke;
+    color: #818181;
+    font-weight: 800;
+  }
   &.option--active,
   &.option--active > p,
   &.option--active > h3 {
