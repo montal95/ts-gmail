@@ -4,6 +4,7 @@ export const EmailListContainer = styled.div`
   flex: 1;
   overflow: scroll;
   .settings-container {
+    padding: 2px 0;
     position: sticky;
     top: 0;
     display: flex;
